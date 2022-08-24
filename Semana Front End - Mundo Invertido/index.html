@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Invertido</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
+
+    <Header aria-label="Cabeçalho da página">
+        <audio id="music" autoplay>
+            <source src="assets/musicas/normal-world.mpeg" aria-details="música de fundo"/>
+        </audio>
+        <div class="header-content">
+            <img class="logo-invert-world" src="assets/imagens/banner/logo.svg" alt="banner do mundo Invertido">
+            <p>Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Invertido é incerto, repleto de obstáculo e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido!</p>
+        </div>
+        <button id="button-invert-world" onclick="switchTheme()">Inverter Mundo</button>
+
+        <div id="characters-up" class="world-characters"></div>
+    </Header>
+
+    <main>
+        <div id="characters-down" class="world-characters"></div>
+
+        <section id="inverted-world" class="container">
+            <div class="sections-texts">
+                <h2>O mundo Invertido</h2>
+                <p role="text">O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assutadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna,que tem planos de trazer tudo isso ao nosso mundo.</p>
+            </div>
+
+            <img class="invert-element" src="assets/imagens/content/inverted-world.png" alt="Imagem do mundo invertido">
+        </section>
+
+        <section id="trailer-section" class="container">
+            <div class="video-player" aria-hidden="true">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/otutSrxYpa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sections-texts">    
+                <h2> Stranger things vol.4</h2>
+                <p role="text">Mais experientes, os heróis de Stranger Things também precisam enfrentar desafios maiores do que nunca e fazer decisões que vão mudar suas vidas para sempre. Confira ao lado o trailer da quarta temporada.</p>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="container">
+            <div class="container-section-text"></div>
+            <h2>A segunda série mais assistida da netflix</h2>
+            <ul class="gallery-container" role="gallery">
+                <li class="inverted-imagem-gallery">
+                    <img src="assets/imagens/content/serie-image-01.png" alt="imagem do vecna na galeria de imagens">
+                </li>
+                <li class="inverted-imagem-gallery">
+                    <img src="assets/imagens/content/serie-image-02.png" alt="imagem de alguns protagonista da série stranger things, Onze, Mike, Lucas, Will, Max">
+                </li>
+                <li class="inverted-imagem-gallery">
+                    <img src="assets/imagens/content/serie-image-03.png" alt="imagem da onze com o grupo de amigos">
+                </li>
+            </ul>
+        </section>
+
+        <section class="fourth-section">
+
+            <h2>O Cluber Dungeons & Dragons</h2>
+
+            <p>Para deter Vecna, os heróis de Stranger Things também precisam de você. O Clube de D&D mais famoso de Hawkings está com vagas abertas para sua próxima aventura. Se você é destemido, gosta de desafios e não tem medo de rodar o D20, chegou a hora de se inscrever para fazer parte da nova campanha</p>
+            <div class="form-content">
+            <h3>entre para o clube de D&D e tenha experiências de <span>outro mundo</span></h3>
+                <div class="form-container"> 
+                    <form>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" name="name" id="textName">
+
+                        <label for="e-mail">E-mail</label>
+                        <input type="e-mail" name="e-mail" id="textE-mail">
+
+                        <label for="level">Level</label>
+                        <input type="text" name="level" id="textLevel">
+
+                        <label for="character">Personagem</label>
+                        <textarea name="character" cols="30" rows="10" id="textPersonagem"></textarea>
+
+                        <button type="button" id="subscribe">Me inscrever</button>
+                    </form>
+                    <script type="module" src="assets/js/main.js"></script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto construído para fins didáticos, com o objetivo de colocar em
+            prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</p>
+          <img src="assets/imagens/footer/logo.svg" alt="logo da dio no rodapé da pagina">
+    </footer>
+</body>
+</html>
